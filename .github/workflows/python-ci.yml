@@ -59,12 +59,12 @@ jobs:
       run: |
         pipenv install --dev
         pipenv run python -m unittest tests.train_test
-    - name: azure login
-      uses: azure/login@v1
-      with:
-        creds: ${{secrets.AZUREML_CREDENTIALS}}
-    - name: run train/azure/run_pipeline.py
-      run: |
-          pipenv install azure-ai-ml azure.identity mldesigner azureml-mlflow
-          pipenv run python azureml_run_pipeline.py
-      working-directory: train
+    # - name: azure login
+    #   uses: azure/login@v1
+    #   with:
+    #     creds: ${{secrets.AZUREML_CREDENTIALS}}
+    # - name: run train/azure/run_pipeline.py
+    #   run: |
+    #       pipenv install azure-ai-ml azure.identity mldesigner azureml-mlflow
+    #       pipenv run python azureml_run_pipeline.py
+    #   working-directory: train
