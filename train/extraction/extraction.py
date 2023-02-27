@@ -1,7 +1,7 @@
 from io import BytesIO
 from pathlib import Path
 import fitz
-from fitz import Document, Pixmap
+from fitz import Pixmap
 
 def convert_pixmap_to_rgb(pixmap) -> Pixmap:
     """Convert to rgb in order to write on png"""
