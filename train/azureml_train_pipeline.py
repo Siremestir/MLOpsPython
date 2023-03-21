@@ -16,9 +16,9 @@ except Exception as ex:
 # Get a handle to workspace
 ml_client = MLClient(
     credential=credential,
-    subscription_id="9d42c9d4-85ab-429d-afb4-4d77f309078c",
-    resource_group_name="azure-ml",
-    workspace_name="cats-dogs",
+    subscription_id="702f8b3c-87b9-4d7d-b7d5-1063ef6e43e0",
+    resource_group_name="cats-dogs-others-resource",
+    workspace_name="api-cloud",
 )
 
 # Retrieve an already attached Azure Machine Learning Compute.
